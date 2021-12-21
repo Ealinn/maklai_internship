@@ -140,5 +140,4 @@ let calculate = () => {
   }
   
 }
-// document.querySelector(".form").
 $formBtn.addEventListener("click", calculate);
