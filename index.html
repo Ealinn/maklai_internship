@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- /Google Fonts -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Calculating form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-wrapper">
+      <form class="form">
+        <div class="form-descr">
+          <h1 class="form-descr__txt">Введіть числа у відповідні поля та оберіть, яку математичну операцію з ними виконати. Потім натисніть кнопку "Отримати результат". Результат буде округлено до найближчого цілого числа</h1>
+        </div>
+        <div class="input-wrapper">
+          <div class="form__col">
+            <label for="inputNumberOne" class="form__label">Введіть перше число</label>
+            <input type="number" class="form__number" id="inputNumberOne" value="0">
+          </div>
+          <div class="form__col">
+            <label for="inputNumberTwo" class="form__label">Введіть друге число</label>
+            <input type="number" class="form__number" id="inputNumberTwo" value="0">
+          </div>
+          <div class="form__col">
+            <label for="inputMathOperator" class="form__label">Оберіть математичну операцію</label>
+            <div class="form__select">
+              <select id="inputMathOperator" class="select-operator">
+                <option value="select">Select operator</option>
+                <option value="plus">+</option>
+                <option value="minus">-</option>
+                <option value="mult">*</option>
+                <option value="divide">/</option>
+              </select>
+            </div>
+            <!-- <p class="select-warning">Оберіть тип операції</p> -->
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button type="button" class="form__btn">Отримати результат</button>
+        </div>
+      </form>
+      <div class="form-result">
+        <p class="form-result__descr">Результат:</p>
+        <p class="form-result__data"></p>
+      </div>
+    </div>
+
+  </div>
+  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
